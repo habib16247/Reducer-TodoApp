@@ -100,14 +100,10 @@ h3 {
     margin: -17px;
 }
 
-.waterMark {
-    box-sizing: border-box;
-    overflow: hidden;
-}
 
 .waterMark img {
-    /* width: 142px; */
-    width: clamp(70px, 5vw, 180px);
+    width: 142px;
+    /* width: clamp(80px, 5vw, 180px); */
 }
 
 button {
