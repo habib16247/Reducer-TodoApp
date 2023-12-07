@@ -102,13 +102,12 @@ h3 {
 
 .waterMark {
     box-sizing: border-box;
-    border-radius: 50%;
     overflow: hidden;
 }
 
 .waterMark img {
-    width: 142px;
-    /* width: clamp(70px, 5vw, 180px); */
+    /* width: 142px; */
+    width: clamp(70px, 5vw, 180px);
 }
 
 button {
