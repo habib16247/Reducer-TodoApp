@@ -1,0 +1,135 @@
+.Container {
+    max-width: 726px;
+    margin: auto;
+    background: #FBFBFB;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.5);
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: both;
+    position: relative;
+}
+
+h1 {
+    font-size: clamp(21px, 5vw, 29px);
+    font-weight: 900;
+    line-height: clamp(30px, 5vh, 10px);
+}
+
+h2 {
+    font-size: clamp(16px, 5vw, 21px);
+    font-weight: 900;
+    margin-bottom: 4px;
+}
+
+
+.inputArea {
+    display: flex;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: math;
+}
+
+button {
+    font-weight: 800;
+    padding: 0 30px;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #3b974f, #277789d1, #ffffff);
+    color: #fff;
+    font-weight: 800;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+tbody {
+    text-align: center;
+}
+table, thead, tbody, th, td {
+    border: 1px solid rgb(36, 26, 26);
+}
+
+
+th {
+    background: #505050;
+    color: #fff;
+    font-size: medium;
+    font-weight: 900;
+    padding: 5px 0px;
+}
+
+td {
+    padding: 4px 7px;
+    cursor: pointer;
+}
+
+.counter {
+    display: flex;
+    gap: 5vw;
+    flex-wrap: wrap;
+    line-height: 8px;
+}
+
+h3 {
+    font-size: clamp(9px, 5vw, 16px);
+    font-weight: 900;
+    margin: 0px;
+}
+
+.taskList {
+    margin-top: 13px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    margin: -17px;
+}
+
+.waterMark {
+    box-sizing: border-box;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.waterMark img {
+    width: 142px;
+    /* width: clamp(70px, 5vw, 180px); */
+}
+
+button {
+    box-sizing: border-box;
+}
+
+button img {
+    width: 30px;
+    margin-top: 5px;
+}
+
+.empty {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.empty-img {
+    width: 150px;
+}
+
+
+.edit {
+    max-width: 78%;
+}
