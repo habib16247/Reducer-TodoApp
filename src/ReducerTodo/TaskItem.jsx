@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const TaskItem = ({ task, deleteHandler, editHandler, toggleCompleteHandler }) => {
   const [editValue,setEditvalue] = useState('');
@@ -6,9 +6,15 @@ const TaskItem = ({ task, deleteHandler, editHandler, toggleCompleteHandler }) =
   const [isChecked, setIsChecked] = useState(completed);
   const [isEditing, setIsEditing] = useState(false);
 
+
+  useEffect(() => {
+    setEditvalue(text)
+  }, [text])
+
   const handlerEdit = () => {
-    if (isEditing) {
-      // Save edited text
+    if (editValue.trim() === "") {
+      alert("Please enter your valid task!!!")
+    }else {
       editHandler({ id, taskText: editValue });
     }
     setIsEditing(!isEditing);
@@ -17,7 +23,6 @@ const TaskItem = ({ task, deleteHandler, editHandler, toggleCompleteHandler }) =
 
 
   const handleChange = (e) => {
-    console.log(e.target.value)
     setEditvalue(e.target.value) 
   };
 
